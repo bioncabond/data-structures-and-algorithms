@@ -78,7 +78,9 @@ const forEachTwoToThe = (arr) => {
   })
   return newArray;
 };
-
+//Teacher route/short hand this goes inside the const object
+// return arr.map(num => Math.pow(2,num));  
+// {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
