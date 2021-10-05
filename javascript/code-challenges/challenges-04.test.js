@@ -102,7 +102,7 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
-  let sortedPrice = arr.sort( (a,b) => {
+  let sortedPrice = arr.sort((a,b) => {
     if(a.price > b.price){
       return 1;
     } else {
@@ -145,6 +145,14 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
   // Solution code here...
+ //convert to a  string
+ //a stirng we can get its length. str.length  
+
+ return arr.sort((a, b) => {
+    a.toString().length  -b.toString().length; 
+ })
+
+
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -181,6 +189,19 @@ If two people have the same full name, the younger one should come first. Do not
 
 const sortPeopleBetter = (arr) => {
   // Solution code here...
+  //(if)  and else if and else 
+  return arr.sort(a, b => {
+    if (a.lastName !== b.lastName) {
+      return a.lastName > b.lastName ? 1 : -1 
+    }
+    else  if (a.firstName !== b.firstName){
+      return a.firstName > b.firstName ? 1:-1
+    }
+    else {
+      return a.age - b.age; 
+    }
+  })
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -220,7 +241,16 @@ You DO NOT need to use your solution to Challenge 9 in completing Challenge 10.
 ------------------------------------------------------------------------------------------------ */
 
 const sortSchedule = (arr) => {
-  // Solution code here...
+  // Solution code here...  
+  const daysOfWeek = {
+    Monday: 0, Tuesday: 1, Wednesday: 2, Thursday: 3, Friday: 4
+  }  
+  
+  
+  return arr.sort((a, b)  => 
+    (daysOfWeek[a.dayOfWeek] - daysOfWeek[b.dayOfWeek]) || (a.start > b.start ? 1: (a.start < b.start ? -1: 0 )) || (a.end > b.end ? 1  : (a.end < b.end  ? -1 : 0))
+
+  ); 
 };
 
 /* ------------------------------------------------------------------------------------------------
