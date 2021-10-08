@@ -159,7 +159,8 @@ const reversedString = (str) => {
   // Solution code here...
    str.reduce((acc, words) => {
     return words;
-  }, );
+  }, 
+  );
 
   
 };
