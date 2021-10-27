@@ -9,9 +9,6 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str){
   // Solution code here...
-  let splitArr = str.split('');
-  // console.log(splitArr.splice((splitArr.length - 10)));
-  return splitArr.splice((splitArr.length - 10));
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,24 +18,15 @@ Write a function named findMax that takes in a matrix of positive numbers and re
 
 For example:
 [
-  [13, 24, 24, 2],
-  [2, 5, 6],
-  [2, 3]
+  [1, 3, 4, 5],
+  [4, 5, 6],
+  [23, 5, 5]
 ]
 
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
-
-  let max = 0;
-  for(let i = 0; i < matrix.length; i++){
-    for(let j = 0; j < matrix[i].length; j++)
-      if(matrix[i][j] > max){
-        max = matrix[i][j];
-      }
-  }
-  return max;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,13 +45,6 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
-  let sum = 0;
-  matrix.forEach(row => {
-    row.forEach(col => {
-      sum += col;
-    });
-  });
-  return sum;
 };
 
 
@@ -91,15 +72,7 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  let totalArr = [];
-  for(let i = 0; i < hoursOpen.length; i++){
-    let storeSum=0;
-    for(let j = 0; j < cookieStores.length; j++){
-      storeSum += cookieStores[j][i];
-    }
-    totalArr.push(storeSum);
-  }
-  return totalArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,23 +87,8 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
-  // let salesArray = [];
-  // hours.forEach((hour,idx) => {
-  //   let timeSlot = {sales: `${data[idx]} cookies` , time: hours [idx]};
-  //   salesArray.push(timeSlot);
-  // });
-  // return salesArray;
-
-
-  const salesOverView = [];
-  data.forEach((sale, idx) =>{
-    salesOverView.push({
-      sales: `${sale} cookies`,
-      time: hours[idx]
-    });
-  });
-  return salesOverView;
 };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -154,17 +112,6 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].store === 'Pet store') {
-      for (let j = 0; j < arr[i].items.length; j++) {
-        if (arr[i].items[j].name === 'Treats') {
-          return arr[i].items[j].quantity;
-        }
-      }
-    }
-  }
-
-
 };
 
 /* ------------------------------------------------------------------------------------------------
