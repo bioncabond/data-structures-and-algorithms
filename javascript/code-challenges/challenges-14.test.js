@@ -24,6 +24,7 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 
 const toTitleCase = (arr) => {
   // Solution code here...
+  return arr.map(elem => elem[0].toUpperCase);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -99,6 +100,9 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
+  return arr.filter(person => { if (person.mass > 77) { return person } })
+    .map(person => person.name)
+    .join(' - ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,6 +137,8 @@ https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
   // Solution code here...
+  let regex = /^https:\/\//;
+  return regex.test(url);
 };
 
 /* ------------------------------------------------------------------------------------------------
