@@ -12,7 +12,7 @@ def test_node_instance():
     assert node.next == None
     assert node.value == 1
 
-#0a. No False Positives Here
+#0b. No False Positives Here
 def test_node_instance_fail():
     node = Node(1, None)
     assert node.next != node
@@ -24,7 +24,7 @@ def test_linked_list_empty():
     assert ll.head == None
 
 
-#2. Can Instert into the Linked List
+#2. Can Insert into the Linked List
 def test_linked_list_insert():
     ll = LinkedList()
     ll.insert('Link')
@@ -34,7 +34,8 @@ def test_linked_list_insert():
 def test_head_points_to_first_node():
     ll = LinkedList()
     ll.insert('Ian')
-    assert ll.head.value == 'Ian'
+    ll.insert ('Josh')
+    assert ll.head.next.value == 'Ian'
 
 
 #4. Insert multiple nodes into the linked list
@@ -42,42 +43,42 @@ def test_add_multiple_nodes():
     ll = LinkedList()
     ll.insert('Ian')
     ll.insert('Chris')
-    assert 'Ian' , 'Chris' in LinkedList
+    assert ll.head.value == 'Chris'
 
 # #5. return true when finding a value within the linked list that exists
 def test_value_exist_in_list():
     ll = LinkedList()
     node1 = ll.insert('Pookie')
-    ll.head = node1
+    ll.head == node1
 
     node2 = ll.insert('Ray-Ray')
     # node1.next = node2
+    test_node = ll.includes('Ray-Ray')
 
-    ll.includes('Pookie')
-    assert True
+    assert test_node == True
 
 #6. return false when searching a value within the linked list that doesnt exist
-def test_value_exist_in_list():
+def test_value_exist_not_in_list():
     ll = LinkedList()
     node1 = ll.insert('Pookie')
-    ll.head = node1
+    ll.head == node1
 
     node2 = ll.insert('Ray-Ray')
     # node1.next = node2
+    test_node = ll.includes('Bionca')
 
-    test=ll.includes('Josh')
-    assert test == False
+    assert test_node == False
 
 #7. Return a collection of all the values that exist in the linked list
 def test_return_all_values():
     ll=LinkedList()
 
     node1 = ll.insert('Pookie')
-    ll.head = node1
+    ll.head == node1
     node2 = ll.insert('Ray-Ray')
     node3 = ll.insert('Josh')
     test = ll.to_string()
-    assert test == ('Josh -> Ray-Ray -> Pookie -> NULL')
+    assert test == 'Josh -> Ray-Ray -> Pookie -> NULL'
 
 
 
