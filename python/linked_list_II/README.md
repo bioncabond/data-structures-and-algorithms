@@ -15,7 +15,7 @@ Lab 06:
 
 ## Approach & Efficiency
 
-![Whiteboard](Code Challenge_06.jpg)
+![Whiteboard](cc06.png)
 
 -Create the LinkedList Class
 -Create the Node Class
