@@ -2,12 +2,41 @@
 
 ## Challenge
 
-<!-- Description of the challenge -->
+Insert the following methods to traverse and move the positions of nodes:
+Lab 05:
+-Insert
+-Inclueds
+-To String
+
+Lab 06:
+-Append
+-Insert Before
+-Insert After
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+![Whiteboard](Code Challenge_06.jpg)
+
+-Create the LinkedList Class
+-Create the Node Class
+
+## Create append method
+
+-Find the tail of the Linked List (current.next = Null)
+-Add node after the tail position in the Linked List
+
+## Create insert before method
+
+-Within the Linked List class:
+-Identify the specified value
+-Insert the new value before the specified value
+
+## Create insert after method
+
+-Within the Linked List class:
+-Identify the specified value
+-Insert the new value after the specified value
 
 ## API
 
-<!-- Description of each method publicly available to your Linked List -->
+No APIs were used.
