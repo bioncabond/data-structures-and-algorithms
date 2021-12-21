@@ -8,14 +8,15 @@ Lab 05:
 -Inclueds
 -To String
 
-Lab 06:
+## Lab 06:
+
 -Append
 -Insert Before
 -Insert After
 
-## Approach & Efficiency
-
 ![Whiteboard](Code Challenge_06.jpg)
+
+## Approach & Efficiency
 
 -Create the LinkedList Class
 -Create the Node Class

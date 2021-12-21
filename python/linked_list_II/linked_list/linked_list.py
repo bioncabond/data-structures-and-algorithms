@@ -7,8 +7,6 @@ def Error_Handler(func):
             print(f"{func.__name__} is broken! ")
     return Inner_Function
 
-
-
 ##Make the Node Class
 class Node:
     def __init__(self,value, next=None):
@@ -46,6 +44,53 @@ class LinkedList:
         else:
             output_string += 'NULL'
         return output_string
+
+    def append(self, end_value):
+            new_end_node = Node(end_value)
+            current = self.head
+            while current:
+                if current.next == None:
+                    current.next = new_end_node
+                    break
+                current = current.next
+
+
+    def insert_before(self, search_value, new_value):
+        #if the old value is == the head value
+        if self.head.value == search_value:
+        #make a new node using this new value
+            node = Node(new_value)
+        #set that new value next to be the current as the head
+            node.next = self.head
+        #set the current node as the new head
+            self.head = node
+        else:
+            current = self.head
+            #while the next node is not empty
+            while current.next != None:
+                #if the next node's value is the old value
+                if current.next.value == search_value:
+                    #hold that next node in temp
+                    temp = current.next
+                    #droppin in the new node followed by the temp which is the previous current.next
+                    current.next = Node(new_value, temp)
+                    break
+                current = current.next
+
+    def insert_after (self, value, new_value):
+        #if the current node is the head
+        current = self.head
+        #while the current is not the last one
+        while current != None:
+            if current.value == value:
+                temp = current.next
+                current.next = Node(new_value, temp)
+                break
+            current = current.next
+
+
+
+
 
 if __name__=="__main__":
     ll = LinkedList()
