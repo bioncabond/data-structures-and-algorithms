@@ -88,27 +88,31 @@ class LinkedList:
                 break
             current = current.next
 
-    def kth_from_end (self,k=12):
+    def kth_from_end (self,k):
         node_count = 0
         current = self.head
-        print (f'this is node_count: {node_count}')
+        # print (f'this is node_count: {node_count}')
 
         # count the number of nodes in list
-        # while current:
-        #     current = current.next
-        #     node_count += 1
+        while current:
+            current = current.next
+            node_count += 1
+        print (f'this is loops node_count: {node_count}')
+        if k > node_count:
+            return ("k is out of bounds")
+        #moving the pointer back to the front of the list; no list modification
+        elif k < 0:
+            return("k is negative")
+        elif self.head.next is None:
+            return current.value
 
-        # if node_count > k:
-        #     print (f'k is out of bounds')
-        # # elif:
-        # #     current = self.head
-        # #     for i in range(node_count - k):
-        # #         current = current.next
-        # return print (f'this is the return')
-        # current.value
+        current = self.head
+        for i in range(1,node_count - k):
+            current = current.next
+        return current.value
 
 
-        # return follow.value
+
 if __name__=="__main__":
     ll = LinkedList()
     ll.insert()
