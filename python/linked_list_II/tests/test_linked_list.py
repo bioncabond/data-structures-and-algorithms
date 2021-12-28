@@ -147,21 +147,36 @@ def test_k_is_greater():
     ll.insert(3)
     ll.insert(8)
     ll.insert(5)
-    ll.kth_from_end(12)
-    assert ll.to_string() == 'k is out of bounds'
+    expected = ll.kth_from_end(12)
+    assert expected == 'k is out of bounds'
 
 def test_k_equals_length():
-    pass
+    ll=LinkedList()
+    ll.insert(3)
+    ll.insert(8)
+    ll.insert(5)
+    expected = ll.kth_from_end(3)
+    assert expected == ll.head.value
 
 def test_k_is_not_positive():
-    pass
+    ll=LinkedList()
+    ll.insert(3)
+    ll.insert(8)
+    ll.insert(5)
+    expected = ll.kth_from_end(-3)
+    assert expected == "k is negative"
 
-def test_list_is_one():
-    pass
+def test_list_is_one_element():
+    ll=LinkedList()
+    ll.insert(3)
+    expected = ll.head.value
+    assert expected == 3
 
 def test_k_not_at_end():
-    pass
-
-
-
-
+    ll=LinkedList()
+    ll.insert(3)
+    ll.insert(8)
+    ll.insert(5)
+    print(ll.to_string())
+    expected = ll.kth_from_end(2)
+    assert expected == 5

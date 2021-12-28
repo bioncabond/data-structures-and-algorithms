@@ -6,7 +6,7 @@ k-th value from the end of a linked list
 
 ## Whiteboard Process
 
-![Whiteboard](Code Challenge 7.jpg)
+![Whiteboard](/python/linked_list_II/linked_list/Code_Challenge_7.jpg)
 
 ## Approach & Efficiency
 
@@ -50,7 +50,7 @@ Lab 05:
 -Insert Before
 -Insert After
 
-![Whiteboard](Code Challenge_06.jpg)
+![Whiteboard](/python/linked_list_II/linked_list/Code_Challenge_06.jpg)
 
 ## Approach & Efficiency
 
