@@ -1,5 +1,41 @@
 # Singly Linked List
 
+# Challenge Summary
+
+k-th value from the end of a linked list
+
+## Whiteboard Process
+
+![Whiteboard](Code Challenge 7.jpg)
+
+## Approach & Efficiency
+
+--Write method for linked list
+--take in a number as an argument
+--count the number of k from the tail of the list
+--return the node's value that is k places from the tail of the linked list
+
+## Solution
+
+def kth_from_end(self, k):
+leader = self.head
+follower = None
+tail_count = 0
+
+     while leader:
+          leader = leader.next
+
+          if follower:
+             follower = follower.next
+          elif tail_count = k
+             follower = self.head
+           else:
+               tail_count += 1
+       if not follower:
+             raise TargetError("k is out of bounds")
+
+return follower.value
+
 ## Challenge
 
 Insert the following methods to traverse and move the positions of nodes:

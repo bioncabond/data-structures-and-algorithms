@@ -19,7 +19,7 @@ class LinkedList:
         self.value = value
         current = self.head
 
-    @Error_Handler
+    # @Error_Handler
     def insert(self, value):
         node = Node(value)
         if self.head != None:
@@ -88,12 +88,30 @@ class LinkedList:
                 break
             current = current.next
 
+    def kth_from_end (self,k=12):
+        node_count = 0
+        current = self.head
+        print (f'this is node_count: {node_count}')
+
+        # count the number of nodes in list
+        # while current:
+        #     current = current.next
+        #     node_count += 1
+
+        # if node_count > k:
+        #     print (f'k is out of bounds')
+        # # elif:
+        # #     current = self.head
+        # #     for i in range(node_count - k):
+        # #         current = current.next
+        # return print (f'this is the return')
+        # current.value
 
 
-
-
+        # return follow.value
 if __name__=="__main__":
     ll = LinkedList()
+    ll.insert()
     ll.insert(2)
     ll.insert(5)
     ll.insert(7)
@@ -102,6 +120,6 @@ if __name__=="__main__":
     # print(ll.includes(35))
     # ll.__str__()
     ll.to_string()
-    print(f'this is to_string:{ll.to_string()}')
-
-    ll.insert()
+    ll.kth_from_end()
+    # print(f'this is to_string:{ll.to_string()}')
+    print (f'this is LL: {LinkedList()}')
