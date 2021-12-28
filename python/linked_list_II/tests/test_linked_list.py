@@ -141,6 +141,27 @@ def test_after_last_node():
     assert ll.to_string() == '5 -> 8 -> 3 -> 1 -> NULL'
 
 
+#7.1 k is greater than the length of the linked list
+def test_k_is_greater():
+    ll=LinkedList()
+    ll.insert(3)
+    ll.insert(8)
+    ll.insert(5)
+    ll.kth_from_end(12)
+    assert ll.to_string() == 'k is out of bounds'
+
+def test_k_equals_length():
+    pass
+
+def test_k_is_not_positive():
+    pass
+
+def test_list_is_one():
+    pass
+
+def test_k_not_at_end():
+    pass
+
 
 
 
