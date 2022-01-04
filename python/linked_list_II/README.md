@@ -1,3 +1,43 @@
+# zip List
+
+# Challenge Summary
+
+Zip 2 linked list into one so that the nodes alternate between the two list.
+
+## Whiteboard Process
+
+![Whiteboard](/python/linked_list_II/linked_list/Code_Challenge_8.jpg)
+
+## Approach & Efficiency
+
+--Write a function called zip list
+--Take in a 2 list as arguments (a,b)
+--Set the head of both list
+--Create a loop to iterate through each list
+--If the a.next node is truthy grab b.next node to new list
+--If the b.next node is truthy grab a.next to new list
+return the merged list with alternating nodes
+
+## Solution
+
+def zip_list(list_1,list_2):
+list_1_current = list_1_head
+list_2_current = list_2_head
+
+while list_1 current != None and list_2 current != None:
+list_1.next = list_1 current.next
+list_2.next = list_2 current.next
+
+     list_1_current.next = list_2_next
+     list_2_current.next= list_1_next
+
+     list_1_current = list1_next
+     list_2_current = list2_next
+
+test = LinkedList()
+zipped_list = test.zip_list(list_1, list_2)
+print(zipped_list)
+
 # Singly Linked List
 
 # Challenge Summary
