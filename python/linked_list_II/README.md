@@ -1,4 +1,6 @@
-# zip List
+# Zip List
+
+Worked with game of greed partner (Josh H.) on code and whiteboard.
 
 # Challenge Summary
 

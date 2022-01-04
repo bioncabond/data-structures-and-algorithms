@@ -46,13 +46,14 @@ class LinkedList:
         return output_string
 
     def append(self, end_value):
-            new_end_node = Node(end_value)
+        new_end_node = Node(end_value)
+        if self.head is None:
+            self.head = new_end_node
+        else:
             current = self.head
-            while current:
-                if current.next == None:
-                    current.next = new_end_node
-                    break
+            while current.next:
                 current = current.next
+            current.next = new_end_node
 
 
     def insert_before(self, search_value, new_value):
@@ -111,19 +112,41 @@ class LinkedList:
             current = current.next
         return current.value
 
+    def zip_list(self,list_1,list_2):
+        ll = LinkedList()
+        list_1_curr = list_1.head
+        list_2_curr = list_2.head
+        print(f"list_1_current: {list_1_curr.value}")
 
+        while list_1_curr != None or list_2_curr != None:
+            if list_1_curr != None and list_2_curr != None:
+                ll.append(list_1_curr.value)
+                ll.append(list_2_curr.value)
+                # print(f"while equal: {list_1_curr.value} {list_2_curr.value}")
+                list_1_curr = list_1_curr.next
+                list_2_curr = list_2_curr.next
+                # print(f"ll2chains: {ll.to_string()}")
+            elif list_1_curr == None:
+                ll.append(list_2_curr.value)
+                list_2_curr == list_2_curr.next
+            elif list_2_curr == None:
+                ll.append(list_1_curr.value)
+                list_1_curr == list_1_curr.next
+        print(ll.to_string())
+        return ll
 
 if __name__=="__main__":
     ll = LinkedList()
-    ll.insert()
-    ll.insert(2)
-    ll.insert(5)
-    ll.insert(7)
-    ll.insert(6)
-    ll.insert(3)
-    # print(ll.includes(35))
-    # ll.__str__()
-    ll.to_string()
-    ll.kth_from_end()
+    ll1=LinkedList()
+    ll2=LinkedList()
+    ll1.insert(3)
+    ll1.insert(8)
+    ll1.insert(5)
+    ll2.insert('a')
+    ll2.insert('b')
+    ll2.insert('c')
+    expected = ll.zip_list(ll1,ll2)
+    print (f'this is LL: {expected.to_string()}')
+
+
     # print(f'this is to_string:{ll.to_string()}')
-    print (f'this is LL: {LinkedList()}')
