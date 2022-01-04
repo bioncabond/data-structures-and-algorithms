@@ -180,3 +180,18 @@ def test_k_not_at_end():
     print(ll.to_string())
     expected = ll.kth_from_end(2)
     assert expected == 5
+
+def test_both_list_together():
+    ll=LinkedList()
+    ll1=LinkedList()
+    ll2=LinkedList()
+    ll1.insert(3)
+    ll1.insert(8)
+    ll1.insert(5)
+    ll2.insert('a')
+    ll2.insert('b')
+    ll2.insert('c')
+    expected = ll.zip_list(ll1,ll2)
+    assert expected.to_string() == '5 -> c -> 8 -> b -> 3 -> a -> NULL'
+
+
