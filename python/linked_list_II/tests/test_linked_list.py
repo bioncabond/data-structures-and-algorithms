@@ -7,12 +7,14 @@ def test_version():
     assert __version__ == '0.1.0'
 
 #0a. Test of the Node instance
+
 def test_node_instance():
     node = Node(1, None)
     assert node.next == None
     assert node.value == 1
 
 #0b. No False Positives Here
+
 def test_node_instance_fail():
     node = Node(1, None)
     assert node.next != node
@@ -165,13 +167,11 @@ def test_k_is_not_positive():
     ll.insert(5)
     expected = ll.kth_from_end(-3)
     assert expected == "k is negative"
-
 def test_list_is_one_element():
     ll=LinkedList()
     ll.insert(3)
     expected = ll.head.value
     assert expected == 3
-
 def test_k_not_at_end():
     ll=LinkedList()
     ll.insert(3)
@@ -180,7 +180,6 @@ def test_k_not_at_end():
     print(ll.to_string())
     expected = ll.kth_from_end(2)
     assert expected == 5
-
 def test_both_list_together():
     ll=LinkedList()
     ll1=LinkedList()

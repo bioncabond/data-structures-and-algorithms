@@ -1,3 +1,33 @@
+# Stacks and Queues
+
+Implement and test both stacks and queues.
+
+## Challenge
+
+Create a Stack Class and the following methods to maneuver the stack:
+-push: add to
+-pop: take away from
+-peek: see what is on top
+-Is_Empty: is the stack empty? Return True
+
+Create a Queue Class and the following methods to maneuver the stack:
+-enqueue: add to
+-dequeue: take away
+-peek: see what is at the front
+-Is_Empty: is the queue empty? Return True
+
+Besure to raise execptions for peek and pop for stacks if the stack is empty.
+
+Besure to raise execptions for peek and dequeue for queue if the queue is empty.
+
+## Approach & Efficiency
+
+Write the methods to handle the above mentioned methods.
+
+## API
+
+No APIs needed.
+
 # Zip List
 
 Worked with game of greed partner (Josh H.) on code and whiteboard.
