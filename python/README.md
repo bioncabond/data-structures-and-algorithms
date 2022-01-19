@@ -1,3 +1,10 @@
+# pseudo queue
+Partner(s) for this code challenge josh H. 
+
+Create a new class called pseudo queue
+Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.  
+
+
 # array_binary_search
 
 My Partner for this code challenge was Ian Cargill. (A new class partner list was sent out after Ian and I started working. Taylor was to work with Victor.)
