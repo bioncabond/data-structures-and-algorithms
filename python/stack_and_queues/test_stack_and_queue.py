@@ -131,7 +131,8 @@ def test_instantiate_empty_queue():
     expected = True
     assert expected == actual
 
-def test_push_into_s1():
+#Pseudo Queue Test
+def test_enqueue_stack():
     p = Pseudo_queue()
     p.enqueue("green")
     p.enqueue("red")
@@ -145,19 +146,29 @@ def test_push_s1_into_s2():
     p.enqueue("green")
     p.enqueue("red")
     p.enqueue("blue")
-    actual = p.len
-    expected = 3
-    assert expected == actual
+    expected = p.s2.top.value
+    assert expected == "green"
 
 def test_s1_empty():
     p = Pseudo_queue()
-    actual = p.IsEmpty()
-    expected = True
-    assert expected == actual
+    expected = p.s1.top
+    assert expected == None
 
 def test_s2_empty():
     p = Pseudo_queue()
-    actual = p.IsEmpty()
-    expected = True
+    expected = p.s2.top
+    assert expected == None
+
+def test_dequeue_stack():
+    p = Pseudo_queue()
+    p.enqueue("green")
+    p.enqueue("red")
+    p.enqueue("blue")
+    p.dequeue()
+    p.dequeue()
+    actual = p.len
+    expected = 1
     assert expected == actual
+
+
 
