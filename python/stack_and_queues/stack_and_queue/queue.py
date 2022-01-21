@@ -1,7 +1,7 @@
+from __future__ import annotations
 from stack_and_queue.node import Node
 from stack_and_queue.stack import Stack
 import sys
-
 
 class Queue:
     def __init__(self,front=None,rear=None):
@@ -73,41 +73,62 @@ class Pseudo_queue():
         return self.s2.pop()
 
 
-class Animal_shelter(object):
+
+# class Animal():
+#     def __init__(self,animal):
+#         self.animal = animal
+#         self.animal_type = self.only_dogs_and_cats()
+
+#     def only_dogs_and_cats(self):
+#         small_animal = self.animal
+#         if small_animal in ['dog','cat']:
+#             return small_animal
+#         else:
+#             print("We don't have that here.")
+
+
+class Animal_shelter():
+
+    # class _Node():
+    #     def __init__(self,value,next=None)
+    #     self.value = value
+
 
     def __init__(self):
-        self.queue_1 = Queue()
-        self.queue_2 = Queue()
-        # self.current_queue = self.queue_1
-        # self.next_queue = self.queue_2
+        self.stack = Stack()
         self.size = 0
-        self.head = None
+        self.front = None
+        self.rear = None
+        self.queue = Queue()
+        self.animal_type= ""
 
-    def __str__(self):
-        current = self.head
-        while current:
-            current = current.next
+
+    def isEmpty(self):
+        return self.size == 0
 
     def enqueue(self,animal_type):
-        if self.queue_2 == None:
-            self.queue_2.push(animal_type)
+        print(f'inside enqueue {animal_type}')
+        node = Node(animal_type)
+
+        if self.isEmpty():
+            self.queue.front = node
+            self.queue.rear = node
         else:
-            if animal_type == 'dog' or animal_type == 'cat':
-                to_add = animal_type
-                self.size +=1
-                if not self.head:
-                    self.head = to_add
-                else:
-                    temp_animal = self.head
-                    print (f'{animal_type} {self.size} toadd: {to_add} {self.head}')
+            self.queue.rear.next = node
+            self.queue.rear = node
+        self.size += 1
 
-                    while temp_animal.next != None:
-                        temp_animal.next = self.head
 
-            else:
-                print(f'We dont keep {animal_type}s here')
-
-    # def dequeue(self,animal_type):
+    def dequeue(self,animal_type):
+        pass
+    # 1 while:
+    ##check each time if the pref = dog or cat (animal_type)
+        ##if it matches
+        # return and exit
+    # 2 while:
+    ## push everything in the stack
+    ##back to the queue and set the front of the queue to the next node
+    ##use pop to get the last one off the stack and return it
 
 if __name__ == "__main__":
 
@@ -123,7 +144,7 @@ if __name__ == "__main__":
     a = Animal_shelter()
     a.enqueue("dog")
     a.enqueue("dog")
-    a.enqueue("cat")
+    # a.enqueue("cat")
     # a.enqueue("bear")
 
     # print(a.enqueue())
