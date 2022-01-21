@@ -1,7 +1,7 @@
 import pytest
 from stack_and_queue import __version__
 # from stack_and_queue.node import Node
-from stack_and_queue.queue import Queue,Pseudo_queue
+from stack_and_queue.queue import Queue,Pseudo_queue,Animal_shelter
 from stack_and_queue.stack import Stack
 
 
@@ -170,5 +170,17 @@ def test_dequeue_stack():
     expected = 1
     assert expected == actual
 
+def test_dogs_and_cats_only():
+    a = Animal_shelter()
+    a.enqueue("dog")
+    a.enqueue("cat")
+    a.enqueue("bear")
+    actual = a.size
+    expected = 2
+    assert expected == actual
 
+# def test_queue_2_empty():
+#     a = Animal_shelter()
+#     expected = a.queue_2.head.value
+#     assert expected == None
 

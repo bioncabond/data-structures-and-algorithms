@@ -1,5 +1,6 @@
 from stack_and_queue.node import Node
 from stack_and_queue.stack import Stack
+import sys
 
 
 class Queue:
@@ -71,20 +72,58 @@ class Pseudo_queue():
         self.len -=1
         return self.s2.pop()
 
+
+class Animal_shelter(object):
+
+    def __init__(self):
+        self.queue_1 = Queue()
+        self.queue_2 = Queue()
+        # self.current_queue = self.queue_1
+        # self.next_queue = self.queue_2
+        self.size = 0
+        self.head = None
+
+    def __str__(self):
+        current = self.head
+        while current:
+            current = current.next
+
+    def enqueue(self,animal_type):
+        if self.queue_2 == None:
+            self.queue_2.push(animal_type)
+        else:
+            if animal_type == 'dog' or animal_type == 'cat':
+                to_add = animal_type
+                self.size +=1
+                if not self.head:
+                    self.head = to_add
+                else:
+                    temp_animal = self.head
+                    print (f'{animal_type} {self.size} toadd: {to_add} {self.head}')
+
+                    while temp_animal.next != None:
+                        temp_animal.next = self.head
+
+            else:
+                print(f'We dont keep {animal_type}s here')
+
+    # def dequeue(self,animal_type):
+
 if __name__ == "__main__":
 
     # q = Queue()
     # q.enqueue("apple")
     # q.enqueue("car")
     # q.enqueue("zelda")
-    p = Pseudo_queue()
-    p.enqueue("pizza")
-    p.enqueue("wings")
-    p.enqueue("burgers")
+    # p = Pseudo_queue()
+    # p.enqueue("pizza")
+    # p.enqueue("wings")
+    # p.enqueue("burgers")
     # p.dequeue()
+    a = Animal_shelter()
+    a.enqueue("dog")
+    a.enqueue("dog")
+    a.enqueue("cat")
+    # a.enqueue("bear")
 
-    # print(p.dequeue())
-
-
-
-
+    # print(a.enqueue())
