@@ -174,7 +174,6 @@ def test_dogs_and_cats_only():
     a = Animal_shelter()
     a.enqueue("dog")
     a.enqueue("cat")
-    a.enqueue("bear")
     actual = a.size
     expected = 2
     assert expected == actual
