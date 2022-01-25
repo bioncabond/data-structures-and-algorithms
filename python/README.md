@@ -1,3 +1,41 @@
+# Animal Shelter
+
+-Create a class called AnimalShelter which holds only dogs and cats.
+The shelter operates using a first-in, first-out approach.
+    Implement the following methods:
+    enqueue
+        Arguments: animal
+        animal can be either a dog or a cat object.
+    dequeue
+        Arguments: pref
+        pref can be either "dog" or "cat"
+Return: either a dog or a cat, based on preference.
+If pref is not "dog" or "cat" then return null.
+
+## Whiteboard Process
+
+![Whiteboard](binarywhiteboard.png)
+
+## Approach & Efficiency
+
+-Create an Animal_shelter Class 
+-Create a Stack and Queue to manage animals entering the shelter 
+-Create an Is_empty funtion 
+-Enqueue: 
+    -Take in animal type 
+    -Create node to hold the animal type 
+    -If empty:
+        -Set the front ad rear to the Node
+     Else: 
+        -set the queue's rear's next to node 
+        -set the queue's rear to the node 
+     Increment size +1 
+
+
+
+
+
+
 # pseudo queue
 Partner(s) for this code challenge josh H. 
 
