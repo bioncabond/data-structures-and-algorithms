@@ -37,7 +37,6 @@ If pref is not "dog" or "cat" then return null.
     -If its not store that front value in a variable
     -Push that value into the stack 
     -Point set the next node to the front. 
-    
     -If there is noting at thte top of the stack: 
         -store the front of the queue 
         -pop that last value off the stack and store it as the front 
