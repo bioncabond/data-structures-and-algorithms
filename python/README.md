@@ -1,3 +1,25 @@
+#MultiBracket Validation 
+- Write a function called validate_brackets that takes in a string and returns a true or false whether or not the brackets in the string are balanced.
+- 
+![Whiteboard](https://user-images.githubusercontent.com/88898665/150917743-7451cf41-d802-4162-b88f-fe27c37d2038.png)
+
+# Approach & Efficiency
+Write a function that takes in one string as imput
+    Create 3 list:
+    Open Tags =  [,{,(
+    Closing Tags = ],},)
+    Validate = empty list
+Iterate through the string and compare indexes:
+    If in open tags, push the index into the the empty list
+    If in the closed tags, check to see if the index of the bracket to the last element in the empty list
+    if true then pop from the empty list
+    if false, return false
+Once the loop if finished, check to see if there is anything in the empty list we made.
+    If empty return True
+    If not empty; return Fals
+# Solution
+    
+
 # Animal Shelter
 
 -Create a class called AnimalShelter which holds only dogs and cats.
@@ -14,7 +36,7 @@ If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
 
-![Whiteboard](binarywhiteboard.png)
+![Whiteboard]ANIMAL_SHELTER_WB.HERE
 
 ## Approach & Efficiency
 
