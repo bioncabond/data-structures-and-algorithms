@@ -21,8 +21,9 @@ Iterate through the string and compare indexes:
 Once the loop if finished, check to see if there is anything in the empty list we made.
     If empty return True
     If not empty; return Fals
+
 Solution
-    
+Run test in test_validate.py    
 
 # Animal Shelter
 
