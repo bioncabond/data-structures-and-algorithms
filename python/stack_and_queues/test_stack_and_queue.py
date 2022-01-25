@@ -1,9 +1,11 @@
 import pytest
 from stack_and_queue import __version__
 # from stack_and_queue.node import Node
-from stack_and_queue.queue import Queue,Pseudo_queue,Animal_shelter
+from stack_and_queue.queue import Queue
 from stack_and_queue.stack import Stack
-
+from stack_and_queue.validate_brackets import *
+from stack_and_queue.pseudo_queue import Pseudo_queue
+from stack_and_queue.animal_shelter import Animal_shelter
 
 #0. Mic Check#
 def test_version():
