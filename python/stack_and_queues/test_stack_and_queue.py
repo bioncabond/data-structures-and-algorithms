@@ -178,8 +178,24 @@ def test_dogs_and_cats_only():
     expected = 2
     assert expected == actual
 
-# def test_queue_2_empty():
-#     a = Animal_shelter()
-#     expected = a.queue_2.head.value
-#     assert expected == None
+def test_dequeue():
+    a = Animal_shelter()
+    a.enqueue("dog")
+    a.enqueue("cat")
+    a.dequeue("cat")
+
+    actual = a.size
+    expected = 1
+    assert expected == actual
+
+
+def test_dequeue():
+    a = Animal_shelter()
+    a.enqueue("cat")
+    a.enqueue("dog")
+    a.dequeue("cat")
+    actual = a.size
+    expected = 1
+    assert expected == actual
+
 
