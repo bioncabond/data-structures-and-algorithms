@@ -1,7 +1,8 @@
 #MultiBracket Validation 
 - Write a function called validate_brackets that takes in a string and returns a true or false whether or not the brackets in the string are balanced.
 - 
-![Whiteboard](https://user-images.githubusercontent.com/88898665/150917743-7451cf41-d802-4162-b88f-fe27c37d2038.png)
+![Whiteboard]!(https://user-images.githubusercontent.com/88898665/150918596-21cf21af-9286-4e20-9433-c0e23f413321.png)
+
 
 # Approach & Efficiency
 Write a function that takes in one string as imput
