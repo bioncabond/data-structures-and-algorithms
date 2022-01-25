@@ -107,10 +107,10 @@ class Animal_shelter():
         return self.size == 0
 
     def enqueue(self,animal_type):
-        print(f'inside enqueue {animal_type}')
+        # print(f'inside enqueue {animal_type}')
         node = Node(animal_type)
 
-        if self.isEmpty():
+        if self.isEmpty() == True:
             self.queue.front = node
             self.queue.rear = node
         else:
@@ -119,8 +119,25 @@ class Animal_shelter():
         self.size += 1
 
 
-    def dequeue(self,animal_type):
-        pass
+    def dequeue(self,pref_animal):
+        status = True
+        while status == True:
+            if pref_animal == self.queue.front.value:
+                self.animal_type = self.queue.front.value
+                status = False
+            else:
+                temp = self.queue.front
+                self.stack.push(self.queue.front)
+                self.queue.front = self.queue.front.next
+
+        while self.stack.top != None:
+            temp = self.queue.front
+            self.queue.font = self.stack.pop()
+            self.queue.front.next = temp
+
+        self.size -= 1
+        print(f'dequeue: {self.animal_type} {self.size}')
+        return self.animal_type
     # 1 while:
     ##check each time if the pref = dog or cat (animal_type)
         ##if it matches
@@ -143,8 +160,7 @@ if __name__ == "__main__":
     # p.dequeue()
     a = Animal_shelter()
     a.enqueue("dog")
-    a.enqueue("dog")
-    # a.enqueue("cat")
-    # a.enqueue("bear")
+    a.enqueue("cat")
+    a.enqueue("cat")
+    a.dequeue("dog")
 
-    # print(a.enqueue())
