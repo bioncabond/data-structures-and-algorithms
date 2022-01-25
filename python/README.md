@@ -30,9 +30,21 @@ If pref is not "dog" or "cat" then return null.
         -set the queue's rear's next to node 
         -set the queue's rear to the node 
      Increment size +1 
-
-
-
+-Dequeue: 
+    -Take in the prefered animal 
+    -See if the preferred animal is the value of what is in the front of the queue. 
+        - If they are eual set that animal type as the front value 
+    -If its not store that front value in a variable
+    -Push that value into the stack 
+    -Point set the next node to the front. 
+    
+    -If there is noting at thte top of the stack: 
+        -store the front of the queue 
+        -pop that last value off the stack and store it as the front 
+        -point the next node after the front to the temp. 
+    Decrease size -1 
+    return the animal_type
+        
 
 
 
