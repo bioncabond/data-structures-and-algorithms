@@ -23,6 +23,7 @@ Once the loop if finished, check to see if there is anything in the empty list w
     If not empty; return Fals
 
 Solution
+ 
 Run test in test_validate.py    
 
 # Animal Shelter
