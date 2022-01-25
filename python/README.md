@@ -4,7 +4,7 @@
 ![Whiteboard]! (https://user-images.githubusercontent.com/88898665/150918596-21cf21af-9286-4e20-9433-c0e23f413321.png)
 
 
-# Approach & Efficiency
+Approach & Efficiency
 Write a function that takes in one string as imput
     Create 3 list:
     Open Tags =  [,{,(
@@ -18,7 +18,7 @@ Iterate through the string and compare indexes:
 Once the loop if finished, check to see if there is anything in the empty list we made.
     If empty return True
     If not empty; return Fals
-# Solution
+Solution
     
 
 # Animal Shelter
