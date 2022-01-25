@@ -1,4 +1,4 @@
-#MultiBracket Validation 
+# MultiBracket Validation 
 
 - Write a function called validate_brackets that takes in a string and returns a true or false whether or not the brackets in the string are balanced.
  
