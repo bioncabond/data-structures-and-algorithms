@@ -32,8 +32,8 @@ Run test in test_validate.py
 - The shelter operates using a first-in, first-out approach.
     Implement the following methods:
     - enqueue
-        Arguments: animal
-        animal can be either a dog or a cat object.
+    -- Arguments: animal
+    --- animal can be either a dog or a cat object.
     - dequeue
         Arguments: pref
         pref can be either "dog" or "cat"
