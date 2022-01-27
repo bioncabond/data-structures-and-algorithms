@@ -80,7 +80,7 @@ Use the enqueue and dequeue methods to push values from one stack to a second st
 
 ![Whiteboard]! (https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
 
-## Approach & Efficiency
+#Approach & Efficiency
 -Create a class named Psuedo_queue 
 -Initialize: 
     Stack1 & Stack2
