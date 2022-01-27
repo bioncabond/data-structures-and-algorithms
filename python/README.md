@@ -71,16 +71,29 @@ If pref is not "dog" or "cat" then return null.
         -point the next node after the front to the temp. 
     Decrease size -1 
     return the animal_type
-        
-
-
-
+--------------        
 # pseudo queue
 Partner(s) for this code challenge josh H. 
 
 Create a new class called pseudo queue
 Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.  
 
+## Whiteboard! ![Screen Shot 2022-01-27 at 2 08 24 PM](https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
+
+## Approach & Efficiency
+-Create a class named Psuedo_queue 
+-Initialize: 
+    Stack1 & Stack2
+    Len counter = 0
+-Create enqueue function
+    If Stack 2 is empty push in arugument
+    Pop off all vallues in Stack 1
+    Push Stack1 values into Stack 2
+    Pop off values in Stack 2 to form queue with new value
+    Increment length +1
+-Create dequeue function
+    decrement length -1
+    return last popped value from stack 2
 
 # array_binary_search
 
