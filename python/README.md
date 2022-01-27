@@ -42,7 +42,7 @@ If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
 
-![Whiteboard]ANIMAL_SHELTER_WB.HERE
+![Whiteboard]! ANIMAL_SHELTER_WB.HERE
 
 ## Approach & Efficiency
 -Create an Animal_shelter Class 
@@ -78,7 +78,7 @@ Partner(s) for this code challenge josh H.
 Create a new class called pseudo queue
 Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.  
 
-## Whiteboard! !(https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
+![Whiteboard]! (https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
 
 ## Approach & Efficiency
 -Create a class named Psuedo_queue 
