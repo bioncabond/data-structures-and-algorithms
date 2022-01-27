@@ -26,8 +26,8 @@ Solution
  
 Run test in test_validate.py    
 
-# Animal Shelter
 
+# Animal Shelter
 -Create a class called AnimalShelter which holds only dogs and cats.
 The shelter operates using a first-in, first-out approach.
     Implement the following methods:
@@ -45,7 +45,6 @@ If pref is not "dog" or "cat" then return null.
 ![Whiteboard]ANIMAL_SHELTER_WB.HERE
 
 ## Approach & Efficiency
-
 -Create an Animal_shelter Class 
 -Create a Stack and Queue to manage animals entering the shelter 
 -Create an Is_empty funtion 
@@ -71,14 +70,15 @@ If pref is not "dog" or "cat" then return null.
         -point the next node after the front to the temp. 
     Decrease size -1 
     return the animal_type
---------------        
+
+
 # pseudo queue
 Partner(s) for this code challenge josh H. 
 
 Create a new class called pseudo queue
 Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.  
 
-## Whiteboard! ![Screen Shot 2022-01-27 at 2 08 24 PM](https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
+## Whiteboard! !(https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
 
 ## Approach & Efficiency
 -Create a class named Psuedo_queue 
@@ -94,6 +94,8 @@ Use the enqueue and dequeue methods to push values from one stack to a second st
 -Create dequeue function
     decrement length -1
     return last popped value from stack 2
+
+
 
 # array_binary_search
 
