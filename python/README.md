@@ -42,7 +42,8 @@ If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
 
-![Whiteboard]! ANIMAL_SHELTER_WB.HERE
+![Whiteboard]!(https://user-images.githubusercontent.com/88898665/151455117-24470c69-2684-4175-a1d0-c12ee734fdbe.png)
+
 
 ## Approach & Efficiency
 -Create an Animal_shelter Class 
