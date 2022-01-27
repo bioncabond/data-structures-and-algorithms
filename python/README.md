@@ -28,7 +28,7 @@ Run test in test_validate.py
 
 
 # Animal Shelter
--Create a class called AnimalShelter which holds only dogs and cats.
+- Create a class called AnimalShelter which holds only dogs and cats.
 The shelter operates using a first-in, first-out approach.
     Implement the following methods:
     enqueue
