@@ -10,8 +10,15 @@ Challenge
 - This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods: (add, contains)
 
 Approach & Efficiency
-- I took out a pen and paper and literally did a visual for each type of movement within the trees. Once I got a pattern as to how to access each left and right from the root movements, I was able to build testing for the additonal methods required. 
-
+- Took the apporoach of using Nodes to traverse through the trees. 
+- Big O: 
+- Biinary Tree: 
+- Time: o(n) 
+- Space: o(n)
+-  
+- Biinary Search: 
+- Time: log(n) 
+- Space: o(n)
 ## API
 None. 
 
