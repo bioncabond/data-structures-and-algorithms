@@ -1,3 +1,22 @@
+# Trees
+Non Linear data structure 
+2 Types: 1. Binary Tree // Binary Search Tree
+
+## Challenge
+- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node. 
+- Create a Binary Tree class
+- Define a method for each of the depth first traversals: (pre order, in order, post order) which returns an array of the values, ordered appropriately. 
+- Create a Binary Search Tree class
+- This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods: (add, contains)
+
+## Approach & Efficiency
+I took out a pen and paper and literally did a visual for each type of movement within the trees. Once I got a pattern as to how to access each left and right from the root movements, I was able to build testing for the additonal methods required. 
+
+## API
+None. 
+
+
+
 # MultiBracket Validation 
 
 - Write a function called validate_brackets that takes in a string and returns a true or false whether or not the brackets in the string are balanced.
