@@ -11,11 +11,12 @@ Challenge
 
 Approach & Efficiency
 - Took the apporoach of using Nodes to traverse through the trees. 
-- Big O: 
+- Big O:  
+ -  
 - Binary Tree: 
 -   Time: o(n) 
 -   Space: o(n)
-  
+ -  
 - Biinary Search: 
 -   Time: log(n) 
 -   Space: o(n)
