@@ -13,12 +13,12 @@ Approach & Efficiency
 - Took the apporoach of using Nodes to traverse through the trees. 
 - Big O: 
 - Binary Tree: 
-- Time: o(n) 
-- Space: o(n)
+-   Time: o(n) 
+-   Space: o(n)
   
 - Biinary Search: 
-- Time: log(n) 
-- Space: o(n)
+-   Time: log(n) 
+-   Space: o(n)
 ## API
 None. 
 
