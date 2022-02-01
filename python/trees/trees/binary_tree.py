@@ -5,6 +5,7 @@ class Binary_Tree:
         self.root = root
 
 
+
     # root > left > right
     def pre_order(self):
         # empty list for values
@@ -42,6 +43,26 @@ class Binary_Tree:
             print(f"this is values: {values}")
             values.append(root.value) #green
         return values
+
+
+    def max_value(self,current):
+        if not self.root:
+            return "There are no roots to this tree."
+
+        else:
+            max = current.value
+
+            if current.right != None:
+                right_max = self.max_value(current.right)
+                if right_max > max:
+                    max = right_max
+
+            if current.left != None:
+                left_max = self.max_value(current.left)
+                if left_max > max:
+                    max = left_max
+        return max
+
 
 class Binary_Search(Binary_Tree):
 

@@ -67,3 +67,16 @@ def test_contains():
     assert binary_search.contains(binary_search.root,8) == True
     assert binary_search.contains(binary_search.root,27) == True
     assert binary_search.contains(binary_search.root,500) == False
+
+#Max Value Test
+def test_max_value():
+    binary_search = Binary_Search()
+    binary_search.add(8)
+    binary_search.add(12)
+    binary_search.add(27)
+    binary_search.add(45)
+    assert binary_search.max_value(binary_search.root) == 45
+
+def test_max_value_for_empty():
+    binary_search = Binary_Search()
+    assert binary_search.max_value(binary_search.root) == "There are no roots to this tree."
