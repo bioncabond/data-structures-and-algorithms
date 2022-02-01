@@ -1,3 +1,25 @@
+# Trees - Max Value
+
+Challenge
+- Write a method for the Binary Tree class that finds the maximum value.
+
+![Whiteboard]!!(https://user-images.githubusercontent.com/88898665/151912401-7267cef0-2a56-4b54-8e9f-376ca69d930d.png)
+
+
+Approach & Efficiency
+- Create a maximum_value method that takes in self and current.
+- Handle edge cases:
+if there is no root return an error message.
+- Create a variable to hold the max value
+- Check the right side to see if the current value is greater than the current right :
+if the current max is greater set the max to the right max
+- Check the left side  to see if the current value is greater than the current left :
+if the current max is greater set the max to the left max
+- return the max value
+
+## API
+None. 
+
 # Trees
 Non Linear data structure 
 2 Types: 1. Binary Tree // Binary Search Tree
