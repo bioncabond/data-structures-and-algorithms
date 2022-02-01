@@ -3,7 +3,7 @@
 Challenge
 - Write a method for the Binary Tree class that finds the maximum value.
 
-![Whiteboard]!!(https://user-images.githubusercontent.com/88898665/151912401-7267cef0-2a56-4b54-8e9f-376ca69d930d.png)
+![Whiteboard]! (https://user-images.githubusercontent.com/88898665/151912401-7267cef0-2a56-4b54-8e9f-376ca69d930d.png)
 
 
 Approach & Efficiency
