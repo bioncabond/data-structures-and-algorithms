@@ -1,3 +1,31 @@
+
+# Breadth First 
+
+Challenge
+- Write a function called breadth_first that takes in a tree and returns a list of its values in the order that they are encountered.
+
+![Whiteboard]! (https://user-images.githubusercontent.com/88898665/152480689-396470ed-053e-4f0e-89d2-038ea0ea0593.png)
+
+
+
+Approach & Efficiency
+- Create breadth_first function.
+- Create a queue
+- Create a list to hold the output values
+- Handle Edge Cases:
+If there is not root:
+The tree is empty
+- Add the root to the queue as the first value
+- Check if the root has a left:
+- If its there add it to the queue
+- Check if the root has a right:
+- If its there, add it to the queue
+- Dequeue the root and push it into the list of output values
+- return the list of out put value.
+
+## API
+None. 
+
 # Trees - Max Value
 
 Challenge
