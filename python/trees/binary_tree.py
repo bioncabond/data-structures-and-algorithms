@@ -4,8 +4,6 @@ class Binary_Tree:
     def __init__(self,root=None):
         self.root = root
 
-
-
     # root > left > right
     def pre_order(self):
         # empty list for values
@@ -62,6 +60,9 @@ class Binary_Tree:
                 if left_max > max:
                     max = left_max
         return max
+
+
+
 
 
 class Binary_Search(Binary_Tree):

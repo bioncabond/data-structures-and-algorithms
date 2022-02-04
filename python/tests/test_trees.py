@@ -1,10 +1,12 @@
-from trees import __version__
+
 from trees.node import Node
 from trees.binary_tree import Binary_Search, Binary_Tree
+from trees.breadth_first import breadth_first
+import pytest
 
-#0 Mic Check
-def test_version():
-    assert __version__ == '0.1.0'
+# #0 Mic Check
+# def test_version():
+#     assert __version__ == '0.1.0'
 
 #Binary_Tree Class Testing
 
@@ -80,3 +82,15 @@ def test_max_value():
 def test_max_value_for_empty():
     binary_search = Binary_Search()
     assert binary_search.max_value(binary_search.root) == "There are no roots to this tree."
+
+#Breadthfirst Test
+def test_for_output_list():
+   bt = Binary_Tree()
+   a = Node("a")
+   b = Node("b")
+   c = Node("c")
+
+   a.left = b
+   a.right = c
+   expected = breadth_first(bt)
+   assert expected == ['a', 'b', 'c']
