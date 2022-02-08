@@ -1,7 +1,7 @@
 try:
     from trees.node import Node
     from trees.binary_tree import Binary_Tree
-    from stack_and_queues.stack_and_queue.queue import Queue
+    from stack_and_queues.queue import Queue
 
 except:
     from trees.node import Node
