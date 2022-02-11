@@ -1,4 +1,4 @@
-from stack_and_queues.queue import Queue
+from stack_and_queue.queue import Queue
 
 class Node:
     def __init__(self,value,children=[]):

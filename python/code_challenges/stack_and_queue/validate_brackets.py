@@ -1,12 +1,10 @@
 try:
     from stack_and_queue.queue import Queue
     from stack_and_queue.stack import Stack
-    # from stack_and_queue.node import Node
 
 except:
     from queue import Queue
     from stack import Stack
-    # from node import Node
 
 
 def validate_brackets(string):
