@@ -1,4 +1,5 @@
-from stack_and_queue.node import Node
+from code_challenges.stack_and_queue.node import Node
+
 
 class Queue:
     def __init__(self,front=None,rear=None):
@@ -33,11 +34,3 @@ class Queue:
 
     def peek(self):
          return self.front.value
-
-if __name__ == "__main__":
-    q = Queue()
-    q.enqueue("apple")
-    q.enqueue("car")
-    q.enqueue("zelda")
-
-
