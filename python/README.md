@@ -1,5 +1,5 @@
 
-# Breadth First 
+# Breadth First
 
 Challenge
 - Write a function called breadth_first that takes in a tree and returns a list of its values in the order that they are encountered.
@@ -24,7 +24,7 @@ The tree is empty
 - return the list of out put value.
 
 ## API
-None. 
+None.
 
 # Trees - Max Value
 
@@ -46,40 +46,40 @@ if the current max is greater set the max to the left max
 - return the max value
 
 ## API
-None. 
+None.
 
 # Trees
-Non Linear data structure 
+Non Linear data structure
 2 Types: 1. Binary Tree // Binary Search Tree
 
 Challenge
-- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node. 
+- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
 - Create a Binary Tree class
-- Define a method for each of the depth first traversals: (pre order, in order, post order) which returns an array of the values, ordered appropriately. 
+- Define a method for each of the depth first traversals: (pre order, in order, post order) which returns an array of the values, ordered appropriately.
 - Create a Binary Search Tree class
 - This class should be a sub-class (or your languages equivalent) of the Binary Tree Class, with the following additional methods: (add, contains)
 
 Approach & Efficiency
-- Took the apporoach of using Nodes to traverse through the trees. 
-- Big O:  
- -  
-- Binary Tree: 
--   Time: o(n) 
+- Took the apporoach of using Nodes to traverse through the trees.
+- Big O:
+ -
+- Binary Tree:
+-   Time: o(n)
 -   Space: o(n)
- -  
-- Biinary Search: 
--   Time: log(n) 
+ -
+- Biinary Search:
+-   Time: log(n)
 -   Space: o(n)
 ## API
-None. 
+None.
 
 
 
-# MultiBracket Validation 
+# MultiBracket Validation
 
 - Write a function called validate_brackets that takes in a string and returns a true or false whether or not the brackets in the string are balanced.
- 
- 
+
+
 ![Whiteboard]! (https://user-images.githubusercontent.com/88898665/150918596-21cf21af-9286-4e20-9433-c0e23f413321.png)
 
 
@@ -100,8 +100,8 @@ Once the loop if finished, check to see if there is anything in the empty list w
     If not empty; return Fals
 
 Solution
- 
-Run test in test_validate.py    
+
+Run test in test_validate.py
 
 
 # Animal Shelter
@@ -123,44 +123,44 @@ Run test in test_validate.py
 
 
 ## Approach & Efficiency
--Create an Animal_shelter Class 
--Create a Stack and Queue to manage animals entering the shelter 
--Create an Is_empty funtion 
--Enqueue: 
-    -Take in animal type 
-    -Create node to hold the animal type 
+-Create an Animal_shelter Class
+-Create a Stack and Queue to manage animals entering the shelter
+-Create an Is_empty funtion
+-Enqueue:
+    -Take in animal type
+    -Create node to hold the animal type
     -If empty:
         -Set the front ad rear to the Node
-     Else: 
-        -set the queue's rear's next to node 
-        -set the queue's rear to the node 
-     Increment size +1 
--Dequeue: 
-    -Take in the prefered animal 
-    -See if the preferred animal is the value of what is in the front of the queue. 
-        - If they are eual set that animal type as the front value 
+     Else:
+        -set the queue's rear's next to node
+        -set the queue's rear to the node
+     Increment size +1
+-Dequeue:
+    -Take in the prefered animal
+    -See if the preferred animal is the value of what is in the front of the queue.
+        - If they are eual set that animal type as the front value
     -If its not store that front value in a variable
-    -Push that value into the stack 
-    -Point set the next node to the front. 
-    -If there is noting at thte top of the stack: 
-        -store the front of the queue 
-        -pop that last value off the stack and store it as the front 
-        -point the next node after the front to the temp. 
-    Decrease size -1 
+    -Push that value into the stack
+    -Point set the next node to the front.
+    -If there is noting at thte top of the stack:
+        -store the front of the queue
+        -pop that last value off the stack and store it as the front
+        -point the next node after the front to the temp.
+    Decrease size -1
     return the animal_type
 
 
 # pseudo queue
-Partner(s) for this code challenge josh H. 
+Partner(s) for this code challenge josh H.
 
 Create a new class called pseudo queue
-Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.  
+Use the enqueue and dequeue methods to push values from one stack to a second stack. Use stacks to manage the queue.
 
 ![Whiteboard]! (https://user-images.githubusercontent.com/88898665/151452135-acb00093-62f3-438f-b20d-17ed0301880f.png)
 
 #Approach & Efficiency
--Create a class named Psuedo_queue 
--Initialize: 
+-Create a class named Psuedo_queue
+-Initialize:
     Stack1 & Stack2
     Len counter = 0
 -Create enqueue function

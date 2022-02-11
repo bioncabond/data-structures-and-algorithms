@@ -1,5 +1,6 @@
 from stack_and_queue.queue import Queue
 
+
 class Node:
     def __init__(self,value,children=[]):
         self.value = value
@@ -11,7 +12,7 @@ class Kary_Tree:
 
     def breadth_first(self):
         queue = Queue()
-        queue.enqueue(bt.root)
+        queue.enqueue(self.root)
         output_list = []
 
         while queue:

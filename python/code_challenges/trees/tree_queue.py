@@ -1,6 +1,5 @@
 from code_challenges.stack_and_queue.node import Node
 
-
 class Queue:
     def __init__(self,front=None,rear=None):
         self.front = front
