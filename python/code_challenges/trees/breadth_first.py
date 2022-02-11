@@ -1,11 +1,11 @@
-# try:
-from trees.node import Node
-from binary_tree import Binary_Tree
+from trees.binary_tree import *
 from code_challenges.stack_and_queue.queue import Queue
 
-# except:
-#     from trees.node import Node
-#     from trees.binary_tree import Binary_Tree
+class Node:
+    def __init__(self,value):
+        self.value = value
+        self.left = None
+        self.right = None
 
 
 def breadth_first(bt):
