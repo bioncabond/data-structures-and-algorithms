@@ -1,4 +1,3 @@
-
 def Error_Handler(func):
     def Inner_Function(*args, **kwargs):
         try:
