@@ -1,5 +1,6 @@
-from trees.binary_tree import *
-from code_challenges.stack_and_queue.queue import Queue
+# from trees.binary_tree import *
+# from binary_tree import Binary_Tree
+from stack_and_queue.queue import Queue
 
 class Node:
     def __init__(self,value):
