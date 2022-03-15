@@ -36,10 +36,16 @@ class Hashtable:
         return False
 
     def keys(self):
-        index = self.hash(key)
-        if self.buckets[index] is not None:
-            return self.buckets[index].head
-
+        keys = []
+        for bucket in self.buckets:
+            if bucket is not None:
+                if len(bucket) > 1:
+                    for k in bucket:
+                        keys.append(k[0])
+                else:
+                    keys.append(bucket[0][0])
+        keys.sort()
+        return keys
 
     def hash(self,key):
         index = 0
