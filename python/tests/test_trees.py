@@ -1,7 +1,7 @@
 
-from trees.node import Node
-from trees.binary_tree import Binary_Search, Binary_Tree
-from trees.breadth_first import breadth_first
+from code_challenges.trees.node import Node
+from code_challenges.trees.binary_tree import Binary_Search, Binary_Tree
+from code_challenges.trees.breadth_first import breadth_first
 import pytest
 
 # #0 Mic Check
@@ -84,13 +84,30 @@ def test_max_value_for_empty():
     assert binary_search.max_value(binary_search.root) == "There are no roots to this tree."
 
 #Breadthfirst Test
-def test_for_output_list():
-   bt = Binary_Tree()
-   a = Node("a")
-   b = Node("b")
-   c = Node("c")
+# def test_for_output_list():
+#    a = Node("a")
+#    b = Node("b")
+#    c = Node("c")
+#    bt = Binary_Tree(a)
 
-   a.left = b
-   a.right = c
-   expected = breadth_first(bt)
-   assert expected == ['a', 'b', 'c']
+#    a.left = b
+#    a.right = c
+#    expected = breadth_first(bt)
+#    assert expected == ['a','b','c']
+
+# def test_breadth_multiple_val():
+#     apple = Node("apple")
+#     pear = Node("pear")
+#     orange = Node("orange")
+
+#     bt = Binary_Tree(apple)
+#     apple.left = pear
+#     apple.right = orange
+#     expected = breadth_first(bt)
+#     assert expected == ["apple", "pear", "orange"]
+
+def test_breadth_single_val():
+    bt = Binary_Tree()
+    bt.add("apple")
+    expected = breadth_first(bt)
+    assert expected == ["apple"]
