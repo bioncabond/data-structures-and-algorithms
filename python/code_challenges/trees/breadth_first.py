@@ -1,12 +1,6 @@
-# from trees.binary_tree import *
-# from binary_tree import Binary_Tree
-from stack_and_queue.queue import Queue
-
-class Node:
-    def __init__(self,value):
-        self.value = value
-        self.left = None
-        self.right = None
+# from code_challenges.trees.binary_tree import Binary_Tree
+from code_challenges.trees.node import Node
+from code_challenges.stack_and_queue.queue import Queue
 
 
 def breadth_first(bt):
@@ -14,21 +8,18 @@ def breadth_first(bt):
     queue.enqueue(bt.root)
     output_list = []
 
-    while queue.IsEmpty() == None:
-        return "There is no tree to see."
+    while queue.IsEmpty() is False:
+        front = queue.dequeue()
+        output_list.append(front.value)
 
-    else:
-        if bt.root:
-            output_list.append(bt.root)
+        if front.left is not None:
+            queue.enqueue(front.left)
 
-        while queue:
-            current = queue.dequeue()
-            output_list.append(current.value)
-            if current.left:
-                queue.enqueue(current.left)
-            if current.right:
-                queue.enqueue(current.right)
-        return output_list
+        if front.right is not None:
+            queue.enqueue(front.right)
+    return output_list
+
+
 
 
 

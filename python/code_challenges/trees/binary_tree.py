@@ -1,12 +1,13 @@
-class Node:
-    def __init__(self,value):
-        self.value = value
-        self.left = None
-        self.right = None
+from code_challenges.trees.node import Node
 
 class Binary_Tree:
     def __init__(self,root=None):
         self.root = root
+
+    def add(self,value):
+        node = Node(value)
+        if self.is_empty():
+            self.root = node
 
     # root > left > right
     def pre_order(self):
@@ -65,9 +66,12 @@ class Binary_Tree:
                     max = left_max
         return max
 
-
-
-
+    def is_empty(self):
+            try:
+                self.root.value
+                return False
+            except:
+                return True
 
 class Binary_Search(Binary_Tree):
 

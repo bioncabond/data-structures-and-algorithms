@@ -1,7 +1,7 @@
-from __future__ import annotations
-from stack_and_queue.node import Node
-from stack_and_queue.animal_shelter import Animal_shelter
-import sys
+# from __future__ import annotations
+from code_challenges.stack_and_queue.node import Node
+# from code_challenges.stack_and_queue.animal_shelter import Animal_shelter
+# import sys
 
 
 class Queue:
@@ -40,7 +40,7 @@ class Queue:
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
     # q = Queue()
     # q.enqueue("apple")
@@ -51,9 +51,8 @@ if __name__ == "__main__":
     # p.enqueue("wings")
     # p.enqueue("burgers")
     # p.dequeue()
-    a = Animal_shelter()
-    a.enqueue("dog")
-    a.enqueue("cat")
-    a.enqueue("cat")
-    a.dequeue("dog")
-
+    # a = Animal_shelter()
+    # a.enqueue("dog")
+    # a.enqueue("cat")
+    # a.enqueue("cat")
+    # a.dequeue("dog")
