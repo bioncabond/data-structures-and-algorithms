@@ -1,4 +1,4 @@
-from code_challenges.linked_list.linked_list import LinkedList
+from code_challenges.hash_tables.hashtable import Hashtable
 import re
 
 def repeated_word(str):
@@ -16,3 +16,6 @@ def repeated_word(str):
             hashmap.add(word,word)
     return None
 
+# if __name__ == "__main__":
+#     string = 'Once upon a time, there was a brave princess who...'
+#     repeated_word(string)

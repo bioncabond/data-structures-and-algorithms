@@ -5,6 +5,9 @@
 Arguments: string
 Return: string
 
+## Whiteboard
+![Whiteboard](hashmap_repeated_word.png)
+
 ## Approach & Efficiency
 - take in a string
 - instanciate a hashtable
