@@ -16,9 +16,9 @@ def test_first_tree(binary_tree_1,binary_tree_2):
     expected = [6,11]
     assert actual == expected
 
-def test_no_dups(binary_tree_1,binary_tree_2):
-    actual = tree_intersection(binary_tree_1,binary_tree_2)
-    expected = [6,11]
+def test_no_dups(binary_tree_1,binary_tree_3):
+    actual = tree_intersection(binary_tree_1,binary_tree_3)
+    expected = []
     assert actual == expected
 
 
@@ -39,3 +39,12 @@ def binary_tree_2():
     tree2.root.right = Node(11)
     tree2.root.left.right = Node(22)
     return tree2
+
+@pytest.fixture
+def binary_tree_3():
+    tree3 = Binary_Tree()
+    tree3.root = Node(4)
+    tree3.root.left = Node(7)
+    tree3.root.right = Node(12)
+    tree3.root.left.right = Node(23)
+    return tree3
