@@ -8,6 +8,7 @@ def repeated_word(str):
     hashmap = Hashtable()
     lowered =str.lower()
     words = re.findall(r"/w+", lowered)
+    print(f"{words}")
 
     for word in words:
         if hashmap.contains(word):
