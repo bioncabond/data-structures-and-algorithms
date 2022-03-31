@@ -1,6 +1,3 @@
-from tracemalloc import start
-
-
 class Graph:
 
     def __init__(self):
