@@ -1,3 +1,5 @@
+from code_challenges.stack_and_queue.queue import Queue
+
 class Graph:
 
     def __init__(self):
@@ -67,6 +69,28 @@ class Graph:
     # Returns the total number of nodes in the graph
         return len(self.adjacency_list)
 
+    def breadth_first(self, origin_vertex):
+        visited_vertices = []
+        vertex_queue = Queue()
+        i = 0
+        for vertex in self.adjacency_list:
+            if origin_vertex == vertex.value:
+                vertex_queue.enqueue(vertex)
+                break
+            i += 1
+            if i == self.size():
+                raise KeyError("Vertex not in graph")
+
+        j = 0
+        while j < self.size() + 1:
+            vertex = vertex_queue.dequeue()
+            if vertex.value not in visited_vertices:
+                visited_vertices.append(vertex.value)
+                for neighbor in self.adjacency_list[vertex]:
+                    vertex_queue.enqueue(neighbor.vertex)
+            j += 1
+
+        return visited_vertices
 
 class Vertex:
     def __init__(self, value):
