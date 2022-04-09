@@ -83,3 +83,6 @@ def test_empty_graph():
     actual = graph.get_node()
     expected = None
     assert actual == expected
+
+def test_breadth_first(test_graph):
+    assert test_graph.breadth_first("a") == ["a", "b", "c", "e", "d", "f", "g", "h"]
