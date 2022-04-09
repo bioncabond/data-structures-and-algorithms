@@ -1,4 +1,3 @@
-
 class Graph:
 
     def __init__(self):
@@ -68,6 +67,20 @@ class Graph:
     # Returns the total number of nodes in the graph
         return len(self.adjacency_list)
 
+    def business_trip(graph,cities):
+        if graph.get_node() == None or cities == None:
+            return False, 0
+
+        cost = 0
+        flight = False
+        for i in range(0,len(cities) - 1):
+            city = cities[i]
+            neighbor = graph.adjacency_list[city]
+            for edge in neighbor:
+                if edge.vertex.value == cities[i + 1].value:
+                    cost += edge.weight
+                    flight = True
+        return flight, f"${cost}"
 
 class Vertex:
     def __init__(self, value):
@@ -77,3 +90,13 @@ class Edge:
     def __init__(self, vertex,weight=1):
         self.vertex = vertex
         self.weight = weight
+
+if __name__ == "__main__":
+    graph = Graph()
+    a = graph.add_node("a")
+    b = graph.add_node("b")
+    c = graph.add_node("c")
+    graph.add_edge(a, b, 10)
+    graph.add_edge(a, c, 345)
+    flights = [a, c]
+    print(graph.business_trip(flights))
