@@ -44,7 +44,7 @@ def test_collection():
     graph=Graph()
     graph.add_node("a")
     graph.add_node("b")
-    actual = graph.get_node()
+    actual = graph.get_nodes()
     expected = ["a","b"]
     assert actual == expected
 
@@ -80,9 +80,14 @@ def test_one_edge():
 # An empty graph properly returns null
 def test_empty_graph():
     graph = Graph()
-    actual = graph.get_node()
+    actual = graph.get_nodes()
     expected = None
     assert actual == expected
 
 def test_breadth_first(test_graph):
     assert test_graph.breadth_first("a") == ["a", "b", "c", "e", "d", "f", "g", "h"]
+
+def test_depth_first(test_graph):
+    assert test_graph.depth_first("a") == ["a", "b", "d", "c", "e", "f", "h", "g"]
+
+
